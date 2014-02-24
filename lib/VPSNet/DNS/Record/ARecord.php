@@ -1,7 +1,8 @@
 <?php
 
 namespace VPSNet\DNS\Record;
-use VPSNet\Dns\Record;
+
+use VPSNet\DNS\Record;
 
 class ARecord extends DnsRecord
 {
