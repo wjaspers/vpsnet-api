@@ -4,7 +4,7 @@ namespace VPSNet\Ticket;
 
 abstract class MessageEnvelope
 {
-		/**
+	/**
 	 * @var string
 	 */
 	protected $body;
