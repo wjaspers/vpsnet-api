@@ -10,113 +10,113 @@ class VirtualMachine
 	 * @var array
 	 */
 	protected $backups = array();
+	
+	
+	/**
+	 * @var bool
+	 */
+	protected $backupsEnabled;
+	
+	
+	/**
+	 * @var DateTime
+	 */
+	protected $createdAt;
+	
+	
+	/**
+	 * @var bool
+	 */
+	protected $isDeleted;
+	
+	
+	/**
+	 * @var string
+	 */
+	protected $domainName;
+	
+	
+	/**
+	 * @var string
+	 */
+	protected $hostname;
+	
+	
+	/**
+	 * @var int
+	 */
+	protected $id;
+	
+	
+	/**
+	 * @var string
+	 */
+	protected $label;
+	
+	
+	/**
+	 * @var string
+	 */
+	protected $license;
+	
+	
+	/**
+	 * @var string
+	 */
+	protected $password;
+	
+	
+	/**
+	 * @var int
+	 */
+	protected $ramNodesRequired;
+	
+	
+	/**
+	 * @var bool
+	 */
+	protected $rsyncBackupsEnabled;
+	
+	
+	/**
+	 * @var bool
+	 */
+	protected $r1SoftBackupsEnabled;
+	
+	
+	/**
+	 * @var int
+	 */
+	protected $slicesCount;
+	
+	
+	/**
+	 * @var int
+	 */
+	protected $slicesRequired;
+	
+	
+	/**
+	 * @var int
+	 */
+	protected $systemTemplateId;
+	
+	
+	/**
+	 * @var DateTime
+	 */
+	protected $updatedAt;
 
 
 	/**
-     * @var bool
-     */
-    protected $backupsEnabled;
-
-
-    /**
-     * @var DateTime
-     */
-    protected $createdAt;
-
-
-    /**
-     * @var bool
-     */
-    protected $isDeleted;
-
-
-    /**
-     * @var string
-     */
-    protected $domainName;
-
-
-    /**
-     * @var string
-     */
-    protected $hostname;
-
-
-    /**
-     * @var int
-     */
-    protected $id;
-
-
-    /**
-     * @var string
-     */
-    protected $label;
-
-
-    /**
-     * @var string
-     */
-    protected $license;
-
-
-    /**
-     * @var string
-     */
-    protected $password;
-
-
-    /**
-     * @var int
-     */
-    protected $ramNodesRequired;
-
-
-    /**
-     * @var bool
-     */
-    protected $rsyncBackupsEnabled;
-
-
-    /**
-     * @var bool
-     */
-    protected $r1SoftBackupsEnabled;
-    
-
-    /**
-     * @var int
-     */
-    protected $slicesCount;
-
-
-    /**
-     * @var int
-     */
-    protected $slicesRequired;
-
-
-    /**
-     * @var int
-     */
-    protected $systemTemplateId;
-
-
-    /**
-     * @var DateTime
-     */
-    protected $updatedAt;
-
-
-    /**
-     * @param string $label
-     * @param string $hostname
-     */
-    public function __construct($label, $hostname)
-    {
-        $this->label = $label;
-        $this->hostname = $hostname;
-    }
+	 * @param string $label
+	 * @param string $hostname
+	 */
+	public function __construct($label, $hostname)
+	{
+		$this->label = $label;
+		$this->hostname = $hostname;
+	}
 
 
 	/**
