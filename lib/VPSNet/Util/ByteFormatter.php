@@ -34,7 +34,7 @@ class ByteFormatter
     const SCALE = 1024;
 
 
-	/**
+    /**
      * @const string
      */
     const TERABYTES = 'TB';
