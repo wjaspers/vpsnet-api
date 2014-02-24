@@ -1,6 +1,6 @@
 <?php
 
-namespace VPSNet;
+namespace VPSNet\Node;
 
 abstract class Node
 {
