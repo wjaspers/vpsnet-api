@@ -1,0 +1,12 @@
+{
+	"name": "wjaspers/vpsnet-api",
+	"description": "The VPS.net PHP API",
+	"minimum-stability": "stable",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Will Jaspers",
+			"email": "wjaspers4@gmail.com"
+		}
+	]
+}
