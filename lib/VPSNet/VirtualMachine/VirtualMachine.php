@@ -112,7 +112,7 @@ class VirtualMachine
 	 * @param string $label
 	 * @param string $hostname
 	 */
-	public function __construct($label, $hostname)
+	public function __construct($label = '', $hostname = null)
 	{
 		$this->label = $label;
 		$this->hostname = $hostname;
