@@ -4,7 +4,7 @@ namespace VPSNet\Tests\Util;
 
 use VPSNet\Util\ByteFormatter;
 
-class ByteFormtterTest extends \PHPUnit_Framework_Test_Case
+class ByteFormtterTest extends \PHPUnit_Framework_TestCase
 {
 	public function testGetSizeMap()
 	{
