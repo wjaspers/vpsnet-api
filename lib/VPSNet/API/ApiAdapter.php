@@ -39,10 +39,12 @@ abstract class ApiAdapter
 
 	/**
 	 * @param string $apiKey
+	 * @return ApiAdapter
 	 */
 	public function setApiKey($apiKey)
 	{
 		$this->apiKey = $apiKey;
+		return $this;
 	}
 
 
@@ -57,10 +59,12 @@ abstract class ApiAdapter
 
 	/**
 	 * @param string $apiUrl
+	 * @return ApiAdapter
 	 */
 	public function setApiUrl($apiUrl)
 	{
 		$this->apiUrl = $apiUrl;
+		return $this;
 	}
 
 
@@ -75,10 +79,12 @@ abstract class ApiAdapter
 
 	/**
 	 * @param string $apiVersion
+	 * @return ApiAdapter
 	 */
 	public function setApiVersion($apiVersion)
 	{
 		$this->apiVersion = $apiVersion;
+		return $this;
 	}
 
 
@@ -93,10 +99,12 @@ abstract class ApiAdapter
 
 	/**
 	 * @param string $username
+	 * @return ApiAdapter
 	 */
 	public function setUsername($username)
 	{
 		$this->username = $username;
+		return $this;
 	}
 
 
