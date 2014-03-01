@@ -50,13 +50,13 @@ class UpgradeSchedule
 	 * @param bool     $isTemporary
 	 */
 	public function __construct($label, $extraSlices, DateTime $runAt = null, $days = 0, $isTemporary = false)
-    {
-        $this->label = $label;
-        $this->extraSlices = $extraSlices;
-        $this->runAt = $runAt;
-        $this->days = $days;
+	{
+		$this->label = $label;
+		$this->extraSlices = $extraSlices;
+		$this->runAt = $runAt;
+		$this->days = $days;
 		$this->isTemporary = $isTemporary;
-    }
+	}
 
 
 	/**
