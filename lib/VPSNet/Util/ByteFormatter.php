@@ -45,22 +45,19 @@ class ByteFormatter
      *
      * @param float $bytes The number of bytes.
      * @param int $precision How many decimal places matter.
-     * @param string $desiredUnits The format to view in.
-     *  If this is not supplied, this will attempt to format in the 
-     *  smallest known scale.
      * @return string
      */
-    static public function format($bytes, $precision = 1, $desiredUnits = null)
+    static public function format($bytes, $precision = 1)
     {
         $map = self::getSizeMap();
-        // We always start with bytes.
-        $unit = array_shift($map);
-        while ($unit !== $desiredUnits || $bytes > self::SCALE) {
+        while ($bytes >= self::SCALE) {
             $bytes = $bytes / self::SCALE;
-            $unit = array_shift($map);
+            $unit = next($map);
         }
 
-        return round($bytes, $precision) . ' ' . $unit;
+        // @TODO Figure out if the original intent was to handle accuracy or total decimal places.
+        $bytes = round($bytes, $precision);
+        return $bytes . ' ' . current($map);
     }
 
 
