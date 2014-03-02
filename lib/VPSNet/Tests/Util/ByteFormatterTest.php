@@ -25,19 +25,19 @@ class ByteFormatterTest extends \PHPUnit_Framework_TestCase
 			'500 bytes' => array(
 				'bytes' => 500,
 				'expected' => '500 bytes',
-            ),
-            '2048 bytes' => array(
-                'bytes' => 1024 * 2,
-                'expected' => '2 KB',
-            ),
+			),
+			'2048 bytes' => array(
+				'bytes' => 1024 * 2,
+				'expected' => '2 KB',
+			),
 			'2050 bytes' => array(
 				'bytes' => 1025 * 2,
 				'expected' => '2 KB'
-            ),
+			),
 			'1 byte over 1 megabyte' => array(
 				'bytes' => 1025 * 1024,
 				'expected' => '1 MB',
-            ),
+			),
 			'1 gigabyte' => array(
 				'bytes' => 1025 * 1024 * 1024,
 				'expected' => '1 GB',
