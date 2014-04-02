@@ -163,7 +163,7 @@ class VirtualMachine
 	 * @param DateTime $createdAt
 	 * @return VirtualMachine
 	 */
-	public function setCreatedAt($createdAt)
+	public function setCreatedAt(DateTime $createdAt)
 	{
 		$this->createdAt = $createdAt;
 		return $this;
@@ -443,7 +443,7 @@ class VirtualMachine
 	 * @param DateTime $updatedAt
 	 * @return VirtualMachine
 	 */
-	public function setUpdatedAt($updatedAt)
+	public function setUpdatedAt(DateTime $updatedAt)
 	{
 		$this->updatedAt = $updatedAt;
 		return $this;
