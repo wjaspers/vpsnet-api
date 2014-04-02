@@ -6,6 +6,9 @@ use VPSNet\DNS\DnsRecord;
 
 class AaaaRecord extends DnsRecord
 {
+	/**
+	 * @const string
+	 */
 	const TYPE = 'aaaa';
 
 
