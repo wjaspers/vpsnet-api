@@ -4,8 +4,7 @@ namespace VPSNet\DNS\Record;
 
 use VPSNet\DNS\DnsRecord;
 
-class CnameRecord
-extends DnsRecord
+class CnameRecord extends DnsRecord
 {
 	/**
 	 * @const string
